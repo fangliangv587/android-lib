@@ -27,7 +27,7 @@ import java.util.List;
  * @author cisco_luo
  */
 
-public final class RGson {
+public final class XGson {
     private static Gson mGson;
 
     static {
@@ -36,7 +36,7 @@ public final class RGson {
         mGson = builder.create();
     }
 
-    private RGson() {}
+    private XGson() {}
 
     public static <T> String toJson(T t) {
         return mGson.toJson(t);
